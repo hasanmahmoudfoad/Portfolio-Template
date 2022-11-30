@@ -1,3 +1,3 @@
-# Allamaalquran
+# Hasan Mahmoud Portfolio
 
-### this is a custom readme in the allamaalquran website Freelance
+### this is a custom readme in the Portfolio website for me.
