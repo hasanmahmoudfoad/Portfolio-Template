@@ -10,7 +10,7 @@
     <link rel="icon" href="images/my-logo.png" sizes="20x20">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa&family=Average+Sans&family=Cairo+Play:wght@300&family=Carter+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa&family=Average+Sans&family=Cairo+Play:wght@300&family=Carter+One&family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/bootstrap.min.css">
     <link rel="stylesheet" href="./style/swiper-bundle.min.css">
     <link rel="stylesheet" href="./style/all.min.css">
@@ -35,17 +35,17 @@
         </div>
         
         
-        <div class="NB font-carter">
+        <div class="NB font-Montserrat">
             <div class="container">
                 <div class="nav-toggle">
                     <div class="nav-toggle-bar"></div>
                 </div>
                 <navbar class="navbar">
                     <ul>
-                        <li class="diff"><a href="#" data-scrolling="contact">Home</a></li>
-                        <li class="diff"><a href="#" data-scrolling="contact">About</a></li>
-                        <li class="diff"><a href="#" data-scrolling="contact">Experience</a></li> 
-                        <li class="diff"><a href="#" data-scrolling="contact">Projects</a></li>
+                        <li class="diff"><a href="#" data-scrolling="home">Home</a></li>
+                        <li class="diff"><a href="#" data-scrolling="about-me">About</a></li>
+                        <li class="diff"><a href="#" data-scrolling="experience">Experience</a></li> 
+                        <li class="diff"><a href="#" data-scrolling="projects">Projects</a></li>
                         <li class="diff"><a href="#" data-scrolling="contact">Contact</a></li>
                     </ul>                
                     <div class="clearfix hidden"></div>   
@@ -69,10 +69,10 @@
                         
                         <div class="col-10">
                             <ul id="wrapper">
-                                <li class="different"><a href="#" data-scrolling="contact">Home</a></li>
-                                <li class="different"><a href="#" data-scrolling="contact">About</a></li>
-                                <li class="different"><a href="#" data-scrolling="contact">Experience</a></li>
-                                <li class="different"><a href="#" data-scrolling="contact">Projects</a></li>
+                                <li class="different"><a href="#" data-scrolling="home">Home</a></li>
+                                <li class="different"><a href="#" data-scrolling="about-me">About</a></li>
+                                <li class="different"><a href="#" data-scrolling="experience">Experience</a></li>
+                                <li class="different"><a href="#" data-scrolling="projects">Projects</a></li>
                                 <li class="different"><a href="#" data-scrolling="contact">Contact</a></li>
                             </ul>
                             <div class="clearfix hidden"></div>   
@@ -87,43 +87,28 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-8">
-                        <h1 class="title display-4 py-5 font-carter">Hello, I'am Hasan<br>
-                            Front-end /<span class="shopify">Shopify</span> Developer<span class="light-blue"> .</span>
+                        <h1 class="title display-3 py-5 font-Montserrat">Hello, I'am Hasan<br>
+                            Front-end /<span class="shopify">Shopify</span> Developer<span class="light-blue">.</span>
                         </h1>    
-                        <button class="big-btn">Projects</button>   
+                        <button class="big-btn" data-scrolling="projects">Projects</button>   
                     </div>
                     
                 </div>
             </div>
         </section>
         
+
         
-        
-        <!--         
-            <section class="start relative-div overlay">
-                <div class="start-container">
-                    <video autoplay muted loop>
-                        <source src="./images/start.mp4" type="video/mp4">
-                        <source src="movie.ogg" type="video/ogg">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </section>
-        -->
-        
-        
-        
-        <section class="about-me">
+        <section id="about-me" class="about-me">
             <div class="container pt-5">
-                <div class="row">
-                    <div class="col-12 col-md-7 pt-3">                  
+                <div class="row col-rev">
+                    <div class="col-12 col-lg-8 pt-3 ">                  
                         <p class="p-3">
                             I'm interested in IT and everything in this orbit, while studding some programming languages I started to be fascinated by web, I am highly collaborative in work environment, finding solutions to challenges and focused on customer satisfaction. <br>Proven experience developing consumer-focused web sites using HTML, CSS, BOOTSTRAP, JQUERY and JavaScript. <br>I have a nice Experience building User Interface designs that meets the highest standards for web design, user experience, best practices, usability and speed. <br>Also willing to learn anything new related to my filed, Responding to challenges by designing and developing strategies that's generate solutions, Translating this solutions into code and working across many different APIs, third-party integrations and databases.
                         </p>
                     </div>
-                    <div class="col-1"></div>
-                    <div class="col-12 col-md-4 pt-3">
-                        <div class="frame">
+                    <div class="col-12  col-lg-4 pt-3 my-img-container ">
+                        <div class="frame" data-enllax-ratio="-.3" data-enllax-type="foreground">
                             <div class="img-container me-border">
                                 <img class="me" src="./images/metop.png">
                             </div>
@@ -133,30 +118,22 @@
             </div>
         </section>
         
-        <section class="ux">
-            <div class="">
-                <div class="cutout p-5">
-                    <h2 class="display-1 text-center font-carter container">
-                        Always focused to deliver the best user experience ever.
-                    </h2>
-                </div>
-            </div>
-        </section>
-   
+
+        
         <section id="projects" class="projects  py-5">
             <div class="container">
-                <h2 class="text-center glow py-5  font-cairo ">Projects</h2>
+                <h2 class="text-center glow py-5 font-Montserrat ">Projects</h2>
                 <!-- start project -->
-                <div class="row py-5">
-                    <div class="col-12 col-md-6">
-                        <div class="info">
+                <div class="row pv-sm my-5 project-row">
+                    <div class="col-12 col-lg-6" >
+                        <div class="info"  data-enllax-ratio="-.2" data-enllax-type="foreground">
                             <h2 class="py-3 font-Average">Majouri</h2>
-                                <p class="py-3">Crafted in France from blend to bottle, MAJOURI’s cross-cultural identity shapes the creation of experiential fragrances with generous and authentic character. <br>Expertly blended in the home of French perfumery, Grasse, each perfume is composed of precious and natural ingredients from around the world.</p>
-                                <button class="go-to-btn my-5"><span><a href="https://majouri.com/">Go to project</a></span></button>
+                            <p class="py-3">Crafted in France from blend to bottle, MAJOURI’s cross-cultural identity shapes the creation of experiential fragrances with generous and authentic character. <br>Expertly blended in the home of French perfumery, Grasse, each perfume is composed of precious and natural ingredients from around the world.</p>
+                            <button class="go-to-btn my-5"><span><a href="https://majouri.com/">Go to project</a></span></button>
                         </div>
                         
                     </div>
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-lg-6" data-enllax-ratio="-.1" data-enllax-type="foreground">
                         <div class="colored-container relative-div">
                             <div class="frame">
                                 <img class="brand-img" src="./images/majouri-main.jpg">
@@ -164,26 +141,26 @@
                                     <img alt="brand-logo" src="./images/maojuri-logo.jpg">
                                 </div>
                             </div>
-
+                            
                         </div>
                     </div> 
                 </div>
                 <!-- end project -->
-
+                
                 <!-- start project -->
-                <div class="row flex-row-reverse py-5">
-                    <div class="col-12 col-md-6">
+                <div class="row pv-sm my-5 project-row">
+                    <div class="col-12 col-lg-6" data-enllax-ratio="-.2" data-enllax-type="foreground">
                         <div class="info">
                             <h2 class="py-3 font-Average">Maison Matine</h2>
-                                <p class="py-3">Maison Matine, a free, casual & contemporary perfume house!<br>
-                                    By addressing a generation in search of independence and creativity, all perfumes are co-created by graphic designers, perfumers, & the young MaisonMatine community to offer an ephemeral, creative & liberated collection.<br>
-                                    All perfumes were developed and manufactured in France, more precisely in Paris, Grasse and Chartres.
-                                </p>
-                                <button class="go-to-btn my-5"><span><a href="https://maisonmatine.com/">Go to project</a></span></button>
+                            <p class="py-3">Maison Matine, a free, casual & contemporary perfume house!<br>
+                                By addressing a generation in search of independence and creativity, all perfumes are co-created by graphic designers, perfumers, & the young MaisonMatine community to offer an ephemeral, creative & liberated collection.<br>
+                                All perfumes were developed and manufactured in France, more precisely in Paris, Grasse and Chartres.
+                            </p>
+                            <button class="go-to-btn my-5"><span><a href="https://maisonmatine.com/">Go to project</a></span></button>
                         </div>
                         
                     </div>
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-lg-6" data-enllax-ratio="-.1" data-enllax-type="foreground">
                         <div class="colored-container relative-div">
                             <div class="frame">
                                 <img class="brand-img" src="./images/maison-matine-main.jpg">
@@ -191,225 +168,332 @@
                                     <img alt="brand-logo" src="./images/Maison-Matine-Logo.jpg">
                                 </div>
                             </div>
-
+                            
                         </div>
                     </div> 
                 </div>
                 <!-- end project -->
-
+                
                 <!-- start project -->
-                <div class="row py-5">
-                    <div class="col-12 col-md-6">
+                <div class="row pv-sm my-5 project-row">
+                    <div class="col-12 col-lg-6"  data-enllax-ratio="-.2" data-enllax-type="foreground">
                         <div class="info">
                             <h2 class="py-3 font-Average">Maison De Maa</h2>
-                                <p class="py-3">Maison De Maa is a creative office specialized in beauty industry: fragrance, skincare, makeup, fashion,
-                                    Which offers services,<br>
-                                    - strategy: brand creation, naming, category management, distribution plan.<br>
-                                    - graphic design: visual identity, packaging, artistic direction.<br>
-                                    - product design: fragrance bottle, clothes.<br>
-                                    - retail design: shops, popup, merchandising.
+                            <p class="py-3">Maison De Maa is a creative office specialized in beauty industry: fragrance, skincare, makeup, fashion,
+                                Which offers services,<br>
+                                - strategy: brand creation, naming, category management, distribution plan.<br>
+                                - graphic design: visual identity, packaging, artistic direction.<br>
+                                - product design: fragrance bottle, clothes.<br>
+                                - retail design: shops, popup, merchandising.
+                                </p>
                                 <button class="go-to-btn my-5"><span><a href="https://maisondemaa.com/">Go to project</a></span></button>
-                        </div>
-                        
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <div class="colored-container relative-div">
-                            <div class="frame">
-                                <img class="brand-img" src="./images/maison-main.jpg">
-                                <div class="brand-logo">
-                                    <img alt="brand-logo" src="./images/maison.png">
-                                </div>
                             </div>
-
+                            
                         </div>
-                    </div> 
-                </div>
-                <!-- end project -->
-
-                <!-- start project -->
-                <div class="row flex-row-reverse py-5">
-                    <div class="col-12 col-md-6">
-                        <div class="info">
-                            <h2 class="py-3 font-Average">Maa Althahab</h2>
-                            <p class="py-3">Maa Althahab is one of the largest fragrance companies in Syria despite its short journey in fragrances business.<br>Through building up the company on solid foundations using latest management concepts (Established in the beginning of the year 2006) by Mr. Abdul Hadi Al Masmoum.</p>
-                            <button class="go-to-btn my-5"><span><a href="https://www.maa-althahab.com/">Go to project</a></span></button>
-                        </div>
-                        
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <div class="colored-container relative-div">
-                            <div class="frame">
-                                <img class="brand-img" src="./images/maalthahb-min.jpg">
-                                <div class="brand-logo">
-                                    <img alt="brand-logo" src="./images/maa-althahb-logo.png">
+                        <div class="col-12 col-lg-6" data-enllax-ratio="-.1" data-enllax-type="foreground">
+                            <div class="colored-container relative-div" >
+                                <div class="frame">
+                                    <img class="brand-img" src="./images/maison-main.jpg">
+                                    <div class="brand-logo">
+                                        <img alt="brand-logo" src="./images/maison.png">
+                                    </div>
                                 </div>
+                                
                             </div>
-
+                        </div> 
+                    </div>
+                    <!-- end project -->
+                    
+                    <!-- start project -->
+                    <div class="row  pv-sm my-5 project-row">
+                        <div class="col-12 col-lg-6"  data-enllax-ratio="-.2" data-enllax-type="foreground">
+                            <div class="info">
+                                <h2 class="py-3 font-Average">Maa Althahab</h2>
+                                <p class="py-3">Maa Althahab is one of the largest fragrance companies in Syria despite its short journey in fragrances business.<br>Through building up the company on solid foundations using latest management concepts established in the beginning of the year 2006.</p>
+                                <button class="go-to-btn my-5"><span><a href="https://www.maa-althahab.com/">Go to project</a></span></button>
+                            </div>
+                            
                         </div>
-                    </div> 
-                </div>
-                <!-- end project -->
-
-                <!-- start project -->
-                <div class="row py-5">
-                    <div class="col-12 col-md-6">
-                        <div class="info">
-                            <h2 class="py-3 font-Average">Allama Alquran</h2>
+                        <div class="col-12 col-lg-6" data-enllax-ratio="-.1" data-enllax-type="foreground">
+                            <div class="colored-container relative-div" >
+                                <div class="frame">
+                                    <img class="brand-img" src="./images/maalthahb-min.jpg">
+                                    <div class="brand-logo" >
+                                        <img alt="brand-logo" src="./images/maa-althahb-logo.png">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div> 
+                    </div>
+                    <!-- end project -->
+                    
+                    <!-- start project -->
+                    <div class="row pv-sm my-5 project-row">
+                        <div class="col-12 col-lg-6" data-enllax-ratio="-.2" data-enllax-type="foreground">
+                            <div class="info">
+                                <h2 class="py-3 font-Average">Allama Alquran</h2>
                                 <p class="py-3">Alama Al Quran is one of the leading online educational Institutes that Allah "Subhanahu wa-ta'ala" granted us the knowlege, the facilities upon His permission to teach Non-Arabic speakers Qur'an, Arabic and Islamic Studies.</p>
                                 <button class="go-to-btn my-5"><span><a href="">Go to project</a></span></button>
-                        </div>
-                        
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <div class="colored-container relative-div">
-                            <div class="frame">
-                                <img class="brand-img" src="./images/allamaa-main.jpg">
-                                <div class="brand-logo">
-                                    <img alt="brand-logo" src="./images/allamaa-logo.png">
-                                </div>
                             </div>
-
+                            
                         </div>
-                    </div> 
-                </div>
-                <!-- end project -->
-
-                <!-- start project -->
-                <div class="row flex-row-reverse py-5">
-                    <div class="col-12 col-md-6">
-                        <div class="info">
-                            <h2 class="py-3 font-Average">The World Organization for Al-Azhar Graduates</h2>
-                                <p class="py-3">The Organization aims to reach thousands of Al-Azhar graduates abroad, strengthen relations with them and extend a helping hand to them through the activities and advantages it provides to its members.</p>
-                                <button class="go-to-btn my-5"><span><a href="https://azhargraduates.org/waag_new/">Go to project</a></span></button>
-                        </div>
-                        
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <div class="colored-container relative-div">
-                            <div class="frame">
-                                <img class="brand-img" src="./images/waag-main.jpg">
-                                <div class="brand-logo">
-                                    <img alt="brand-logo" src="./images/waag-logo.jpg">
+                        <div class="col-12 col-lg-6" data-enllax-ratio="-.1" data-enllax-type="foreground">
+                            <div class="colored-container relative-div">
+                                <div class="frame">
+                                    <img class="brand-img" src="./images/allamaa-main.jpg">
+                                    <div class="brand-logo">
+                                        <img alt="brand-logo" src="./images/allamaa-logo.png">
+                                    </div>
                                 </div>
+                                
                             </div>
-
-                        </div>
-                    </div> 
-                </div>
-                <!-- end project -->
-
-                <!-- start project -->
-                <div class="row py-5">
-                    <div class="col-12 col-md-6">
-                        <div class="info">
-                            <h2 class="py-3 font-Average">Radia Shaker</h2>
+                        </div> 
+                    </div>
+                    <!-- end project -->
+                    
+                    
+                    <!-- start project -->
+                    <div class="row  pv-sm my-5 project-row">
+                        <div class="col-12 col-lg-6" data-enllax-ratio="-.2" data-enllax-type="foreground">
+                            <div class="info">
+                                <h2 class="py-3 font-Average">Radia Shaker</h2>
                                 <p class="py-3">Radia Shaker is a clothing brand was founded in 2018 by Hadi Shaker.<br> His mother Radia, pillar of the house, succeeded to raise her children & manage her own sewing workshop. <br>She is the example they follow and represent with their clothes, empowered & courageaous women.</p>
                                 <button class="go-to-btn my-5"><span><a href="https://www.radiashaker.com/us/">Go to project</a></span></button>
-                        </div>
-                        
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <div class="colored-container relative-div">
-                            <div class="frame">
-                                <img class="brand-img" src="./images/radia-main.jpg">
-                                <div class="brand-logo">
-                                    <img alt="brand-logo" src="./images/radia-logo.jpg">
-                                </div>
                             </div>
-
+                            
                         </div>
-                    </div> 
-                </div>
-                <!-- end project -->
-
-
-                <!-- start project -->
-                <div class="row flex-row-reverse py-5">
-                    <div class="col-12 col-md-6">
-                        <div class="info">
-                            <h2 class="py-3 font-Average">Public Prosecution</h2>
-                            <p class="py-3">The Public Prosecution website mission is to file a public case and conduct its procedures before the competent authorities and courts, <br>and aims in regard to a public case ends with the issuance of a final judgment in it from the courts, whether of conviction or acquittal.</p>
-                            <button class="go-to-btn my-5"><span><a href="">Go to project</a></span></button>
-                        </div>
-                        
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <div class="colored-container relative-div">
-                            <div class="frame">
-                                <img class="brand-img" src="./images/pp-main.png">
-                                <div class="brand-logo">
-                                    <img alt="brand-logo" src="./images/pp-logo.png">
+                        <div class="col-12 col-lg-6" >
+                            <div class="colored-container relative-div">
+                                <div class="frame">
+                                    <img class="brand-img" src="./images/radia-main.jpg">
+                                    <div class="brand-logo">
+                                        <img alt="brand-logo" src="./images/radia-logo.jpg">
+                                    </div>
                                 </div>
+                                
                             </div>
-
-                        </div>
-                    </div> 
-                </div>
-                <!-- end project -->
-
-
-
-            </div>
-            
-        </section>
-        
-     
-        
-        <section id="contact" class="contact relative-div py-4">
-            <div class="contact-container">
-                <h2 class="text-center py-5 glow font-cairo ">Contact Me</h2>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-md-6">
+                        </div> 
+                    </div>
+                    <!-- end project -->
+                    
+                    
+                    <!-- start project -->
+                    <div class="row  pv-sm my-5 project-row">
+                        <div class="col-12 col-lg-6" data-enllax-ratio="-.2" data-enllax-type="foreground">
                             <div class="info">
-                                
-                                <div class="icon-info">
-                                     <a href="tel:+201153380655"><i class="fa-solid fa-phone icon"></i> <span class="ml-3">+201153380655</span></a>
+                                <h2 class="py-3 font-Average">Public Prosecution</h2>
+                                <p class="py-3">The Public Prosecution website mission is to file a public case and conduct its procedures before the competent authorities and courts, <br>and aims in regard to a public case ends with the issuance of a final judgment in it from the courts, whether of conviction or acquittal.</p>
+                                <button class="go-to-btn my-5"><span><a href="">Go to project</a></span></button>
+                            </div>
+                            
+                        </div>
+                        <div class="col-12 col-lg-6" data-enllax-ratio="-.1" data-enllax-type="foreground">
+                            <div class="colored-container relative-div">
+                                <div class="frame">
+                                    <img class="brand-img" src="./images/pp-main.png">
+                                    <div class="brand-logo">
+                                        <img alt="brand-logo" src="./images/pp-logo.png">
+                                    </div>
                                 </div>
-
-                                <div class="icon-info">
-                                    <a href="https://wa.me/201153380655"><i class="fa-brands fa-whatsapp icon"></i> <span class="ml-3">Whatsapp</span></a>
-                                </div>
-
-                                <div class="icon-info">
-                                    <a href="https://www.linkedin.com/in/hassan-mahmoud-483366170/"><i class="fa-brands fa-linkedin-in icon"></i> <span class="ml-3">Linked In</span></a>
-                                </div>
-
-                                <div class="icon-info">
-                                    <a href="https://github.com/hasanmahmoudfoad"><i class="fa-brands fa-github icon"></i> <span class="ml-3">Github</span></a>
-                                </div>
-
-                                <div class="icon-info">
-                                    <a href="https://mail.google.com/mail/u/"><i class="fa-regular fa-envelope icon"></i> <span class="ml-3 e-mail"> hasanmahmoudfoad@gmail.com</span></a>
-                                </div>
-                                
-
                                 
                             </div>
-                        </div>
-
-                        <div class="col-12 col-md-6">
-                            <p class="qoute font-aref">“Experience is the name everyone gives to their mistakes.” 
-                                <br>– Oscar Wilde
-                            </p>
-                            <div class="logo-container">
-                                <img class="logo" src="./images/coffee-smell.gif">
-                            </div>
-                        </div>
+                        </div> 
                     </div>
+                    <!-- end project -->
+                    
+                    <!-- start project -->
+                    <div class="row  pv-sm my-5 project-row">
+                        <div class="col-12 col-lg-6" data-enllax-ratio="-.2" data-enllax-type="foreground">
+                            <div class="info">
+                                <h2 class="py-3 font-Average">The World Organization for Al-Azhar Graduates</h2>
+                                <p class="py-3">The Organization aims to reach thousands of Al-Azhar graduates abroad, strengthen relations with them and extend a helping hand to them through the activities and advantages it provides to its members.</p>
+                                <button class="go-to-btn my-5"><span><a href="https://azhargraduates.org/waag_new/">Go to project</a></span></button>
+                            </div>
+                            
+                        </div>
+                        <div class="col-12 col-lg-6" data-enllax-ratio="-.1" data-enllax-type="foreground">
+                            <div class="colored-container relative-div">
+                                <div class="frame">
+                                    <img class="brand-img" src="./images/waag-main-alt.jpg">
+                                    <div class="brand-logo">
+                                        <img alt="brand-logo" src="./images/waag-logo.jpg">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div> 
+                    </div>
+                    <!-- end project -->
+                    
+                    
                 </div>
-            </div>
-        </section>
-
-    </section>    <!-- END whole-page SECTION -->
-
-    
-    <script src="./js/jquery-3.6.0.min.js"></script>
-    <script src="./js/popper.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/swiper-bundle.min.js"></script>
-    <script src="./js/all.min.js"></script> 
-    <script src="./js/main.js"></script> 
-    
-</body>
-</html>
+                
+            </section>
+            
+            
+            <section id="experience" class="experience my-5 py-2">
+                <h2 class="text-center glow py-5 font-Montserrat ">Work Experience </h2>
+                <div class="container">
+                    <div class="row row-container" data-enllax-ratio="-.2" data-enllax-type="foreground">
+                        <div class="col-12 col-lg-6 py-4">
+                            <div class="frame">
+                                <div class="work">
+                                    <h3>Frontend Developer <br>
+                                        "El-youm 7"</h3>
+                                        <span class="date">june/2019 - present</span>
+                                        <p>
+                                            Worked as a full time frontend developer till April/2020 then a freelancer at the begining of june/2022.<br>
+                                            I was resposible of designing and producing reusable code, reducing page load times, and employing a variety of markup languages to create the web pages<br>
+                                            Made an interactive news slider for the news websites for presenting the digital newsparers, also contributed in large part of making websites in a distributed enviroments with a great pixel perfect implementation along with the UX and UI Design Teams.
+                                        </p>
+                                        
+                                        <p class="my-2"> Projects Made:</p>                                        
+                                        <ul>
+                                            <li><a href="https://azhargraduates.org/waag_new/">The World Organization for Al-Azhar Graduates</a></li>
+                                            <li><a href="">The Public Prosecution</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-12 col-lg-6 py-4">
+                                <div class="frame">
+                                    <div class="work">
+                                        <h3>Frontend/<span class="shopify">Shopify</span> Developer  (Remoutely)<br>
+                                            "Maison De Maa"</h3>
+                                            <span class="date">August/2019 - july/2022</span>
+                                            <p>
+                                                Worked as a full time developer, resposible of Creating a unique Shopify themes and alter current templates in accordance with established brand criteria, worked to create unique, solid, and creative front-end user experiences, collaborate with the UX and UI Design Teams.
+                                            </p>
+                                            
+                                            
+                                            <p class="my-2"> Projects Made:</p>                                        
+                                            <ul>
+                                                <li><a href="">Maison de maa</a></li>
+                                                <li><a href="">Maa Althahab (Egypt)</a></li>
+                                                <li><a href="">Maa Althahb (Europe)</a></li>
+                                                <li><a href="">Radia Shaker</a></li>
+                                                <li><a href="">Majouri</a></li>
+                                                <li><a href="">Masion Matine</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-12 my-5">
+                                    <div class="frame">
+                                        <div class="work auto-height">
+                                            <h3>UI/Game Developer<br>
+                                                "Selah El Telmeez"</h3>
+                                                <span class="date">july/2022 - Present</span>
+                                                <p>
+                                                    Worked as a full time UI developer, My main role is to  translate creative software design concepts and ideas into reality using front end technology and make the animated game canvas interactive by implementing the native JavaScript functions.<br>
+                                                    Working with the UI/UX Artists to come up with practical solutions to technical challenges and ensure in-game implementations match mockups and vision.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="tech mt-5" id="tech" >
+                            <div class="relative-div">
+                                <h2 class="text-center glow py-5 font-Montserrat ">Technology</h2>
+                                <div class="tech-container py-5">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-6 col-md-2 prog-l">
+                                                <img src="./images/html-5.png">
+                                            </div>
+                                            <div class="col-6 col-md-2 prog-l">
+                                                <img src="./images/css.png" >
+                                            </div>
+                                            <div class="col-6 col-md-2 prog-l">
+                                                <img src="./images/bootstrap.png" >
+                                            </div>
+                                            <div class="col-6 col-md-2 prog-l">
+                                                <img src="./images/js.png">
+                                            </div>
+                                            <div class="col-6 col-md-2 prog-l">
+                                                <img src="./images/shopify-logo.png">
+                                            </div>
+                                            <div class="col-6 col-md-2 prog-l">
+                                                <img src="./images/jq.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section id="ux" class="ux">
+                            <div class="">
+                                <div class="cutout">
+                                    <h2 class="text-center font-Montserrat container" >
+                                        Always focused to deliver the best user experience ever.
+                                    </h2>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section id="contact" class="contact relative-div py-4">
+                            <div class="contact-container">
+                                <h2 class="text-center py-5 glow font-Montserrat ">Contact Me</h2>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12 col-md-6">
+                                            <div class="info">
+                                                
+                                                <div class="icon-info">
+                                                    <a href="tel:+201153380655"><i class="fa-solid fa-phone icon"></i> <span class="ml-3">+201153380655</span></a>
+                                                </div>
+                                                
+                                                <div class="icon-info">
+                                                    <a href="https://wa.me/201153380655" target="_blank"><i class="fa-brands fa-whatsapp icon"></i> <span class="ml-3">Whatsapp</span></a>
+                                                </div>
+                                                
+                                                <div class="icon-info">
+                                                    <a href="https://www.linkedin.com/in/hassan-mahmoud-483366170/" target="_blank"><i class="fa-brands fa-linkedin-in icon"></i> <span class="ml-3">Linked In</span></a>
+                                                </div>
+                                                
+                                                <div class="icon-info">
+                                                    <a href="https://github.com/hasanmahmoudfoad" target="_blank"><i class="fa-brands fa-github icon"></i> <span class="ml-3">Github</span></a>
+                                                </div>
+                                                
+                                                <div class="icon-info">
+                                                    <a href="https://mail.google.com/mail/u/" target="_blank"><i class="fa-regular fa-envelope icon"></i> <span class="ml-3 e-mail"> hasanmahmoudfoad@gmail.com</span></a>
+                                                </div>
+                                                
+                                                
+                                                
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-12 col-md-6">
+                                            <p class="qoute font-aref">“Experience is the name everyone gives to their mistakes.” 
+                                                <br>– Oscar Wilde
+                                            </p>
+                                            <div class="logo-container">
+                                                <img class="logo w-100" src="./images/footerimg.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        
+                    </section>    <!-- END whole-page SECTION -->
+                    
+                    
+                    <script src="./js/jquery-3.6.0.min.js"></script>
+                    <script src="./js/popper.js"></script>
+                    <script src="./js/bootstrap.min.js"></script>
+                    <script src="./js/swiper-bundle.min.js"></script>
+                    <script src="./js/all.min.js"></script> 
+                    <script src="./js/jquery.enllax.min.js"></script>
+                    <script src="./js/main.js"></script> 
+                    
+                </body>
+                </html>

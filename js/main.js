@@ -1,3 +1,9 @@
+
+function colReverse(){
+  $("#about-me .col-rev").addClass("flex-column-reverse");
+  console.log('added flex-column-reverse');
+}
+
 $(document).ready(function () {
   
   /* pre loader*/
@@ -11,26 +17,52 @@ $(document).ready(function () {
   /* pre loader*/
   
   
-  /*scroll to contact us*/
-  /*scroll to contact us*/
   
-  $(' nav li a').click(function(event){
+  
+  /*scrolling events */
+  /*scrolling events */
+
+
+
+  /* Pc nav */
+  $(' nav li a').click(function(){
     $('html , body').animate({
       scrollTop: $('#' + $(this).data("scrolling")).offset().top
-    }, 1000);
+    }, 2000);
   }); 
- 
-  /*scroll to contact us*/
-  /*scroll to contact us*/
   
+  /* Mobile nav */
+  $(' navbar li a').click(function(){
+    $('html , body').animate({
+      scrollTop: $('#' + $(this).data("scrolling")).offset().top
+    }, 2000);
+  }); 
+  
+  /* into Button */
+  $('#home .big-btn').click(function(){
+    $('html , body').animate({
+      scrollTop: $('#' + $(this).data("scrolling")).offset().top
+    }, 2000);
+  }); 
+
+
+
+
+  /*scrolling events */
+  /*scrolling events */
+
+  
+  
+  
+  //nav color scroll change
   $(window).scroll(function() {
     if ($(this).scrollTop() > 30) {
-    $('nav').addClass('bg-light');
+      $('nav').addClass('bg-light');
     } else {
       $('nav').removeClass('bg-light');      
     }
   });
-  
+  //nav color scroll change
   
   
   //go to top buttom
@@ -43,9 +75,20 @@ $(document).ready(function () {
   });
   
   $("#go-top").on("click", function(){
-    $('html, body').animate({scrollTop:0}, '300');  
+    $('html, body').animate({scrollTop:0}, 2000);  
   });
+  //go to top buttom
   
+    let win = $(window); 
+    if (win.width() >= 1199) { 
+      $('#my-img').enllax();
+      $('#projects').enllax();
+      $('#tech').enllax();
+      $('#experience').enllax();
+    }
+    if (win.width() <= 991) { 
+      colReverse();
+    }
 });
 
 /*  Hamburger   */
@@ -74,10 +117,4 @@ $(document).ready(function () {
 // }
 
 
-var c= {
- name : "the c object",
- log : function(){
-  this.name= 'updated the c object';
-  console.log(this);
- }   
-}
+
