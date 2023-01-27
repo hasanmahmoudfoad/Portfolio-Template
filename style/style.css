@@ -951,6 +951,7 @@ nav{
       padding: .7rem 1.3rem;
       font-size: 1rem;
       width: 100%;
+      margin: 0 !important;
     }
     
     #projects .info {
@@ -966,6 +967,7 @@ nav{
     }
     .ux h2 {
       font-size: 3rem;
+      margin: 0;
     }
     .glow {
       font-size: 3rem;
