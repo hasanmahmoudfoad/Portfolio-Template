@@ -897,6 +897,9 @@ nav{
     #projects .colored-container .brand-logo {
       max-width: 100px;
     }
+    .experience .frame .work {
+      padding: 1rem;
+    }
     .contact .info .icon-info span {
       font-size: 1rem;
     }

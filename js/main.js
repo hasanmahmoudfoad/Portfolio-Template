@@ -6,89 +6,99 @@ function colReverse(){
 
 $(document).ready(function () {
   
-  /* pre loader*/
+  /*** pre loader  ***/
   preloaderFadeOutTime = 700;
   function hidePreloader() {
     var preloader = $('.sk-chase');
     $('.whole-page').fadeIn();
     preloader.fadeOut(preloaderFadeOutTime);
-  }hidePreloader();
+  } hidePreloader();
   $('.load-layer').fadeOut();
-  /* pre loader*/
-  
-  
-  
-  
-  /*scrolling events */
-  /*scrolling events */
+  /*** pre loader  ***/
 
 
-
-  /* Pc nav */
-  $(' nav li a').click(function(){
+  /**** Pc nav ****/
+  $(' nav li a').click(function () {
     $('html , body').animate({
       scrollTop: $('#' + $(this).data("scrolling")).offset().top
     }, 2000);
-  }); 
-  
-  /* Mobile nav */
-  $(' navbar li a').click(function(){
+  });
+  /**** Pc nav ****/
+
+
+  /***  Mobile nav ***/
+  $(' navbar li a').click(function () {
     $('html , body').animate({
       scrollTop: $('#' + $(this).data("scrolling")).offset().top
     }, 2000);
-  }); 
-  
+  });
+  $(".navbar li a").on("click", function (){
+    $(".nav-toggle").click();
+  });
+  /***  Mobile nav ***/
+
+
+
   /* into Button */
-  $('#home .big-btn').click(function(){
+  $('#home .big-btn').click(function () {
     $('html , body').animate({
       scrollTop: $('#' + $(this).data("scrolling")).offset().top
     }, 2000);
-  }); 
+  });
+  /* into Button */
 
+
+
+  $("#go-top").on("click", function () {
+    $('html, body').animate({ scrollTop: 0 }, 2000);
+  });
 
 
 
   /*scrolling events */
   /*scrolling events */
 
-  
-  
-  
-  //nav color scroll change
-  $(window).scroll(function() {
+  $(window).scroll(function () {
+
+    //nav color scroll change
     if ($(this).scrollTop() > 30) {
       $('nav').addClass('bg-light');
     } else {
-      $('nav').removeClass('bg-light');      
+      $('nav').removeClass('bg-light');
     }
-  });
-  //nav color scroll change
-  
-  
-  //go to top buttom
-  $(window).scroll(function() {
+
+    //go to top buttom
     if ($(this).scrollTop() > 650) {
       $('#go-top').fadeIn();
     } else {
-      $('#go-top').fadeOut();      
+      $('#go-top').fadeOut();
     }
+
   });
-  
-  $("#go-top").on("click", function(){
-    $('html, body').animate({scrollTop:0}, 2000);  
-  });
+
+
+
+
   //go to top buttom
-  
-    let win = $(window); 
-    if (win.width() >= 1199) { 
-      $('#my-img').enllax();
-      $('#projects').enllax();
-      $('#tech').enllax();
-      $('#experience').enllax();
-    }
-    if (win.width() <= 991) { 
-      colReverse();
-    }
+
+  let win = $(window);
+
+  if (win.width() <= 991) {
+    colReverse();
+  };
+
+
+  if (win.width() >= 1249) {
+    $('#my-img').enllax();
+    $('#min-projects').enllax();
+    $('#sponsorship').enllax();
+    let currentProjectHeight = $("#min-projects").height();
+    let doubledProjectHeight = currentProjectHeight * 1.3;
+    $("#min-projects").height(doubledProjectHeight);
+  };
+
+
+
 });
 
 /*  Hamburger   */
